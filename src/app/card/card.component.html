@@ -1,0 +1,66 @@
+<div class="card card--round">
+  <div class="card__image">
+    <img
+      class="card-img-top"
+      [src]="mission_data?.image"
+      alt="{{'Mission Image for' + mission_data?.name}}"
+      style="width: 100%;"
+    />
+  </div>
+  <div class="card-body">
+    <div class="d-flex card__info">
+      <span>
+        <h4
+          class="card-title title-text mb-2 font-weight-bold"
+          style="font-size: 16px;"
+        >
+          {{ mission_data?.name}} #{{mission_data?.flight_number}}
+        </h4>
+
+        <p class="card-title mb-0">Mission Ids</p>
+        <ul>
+          <li *ngFor="let missionId of mission_data?.missionIds">
+            <p class="card-text subtitle-text">{{missionId}}</p>
+          </li>
+          <li *ngIf="mission_data.missionIds.length == 0">
+            <p
+              class="card-text subtitle-text"
+              style="font-size: 13px; color: #7b8591;"
+            >
+              NA
+            </p>
+          </li>
+        </ul>
+        <div class="details">
+          <span>
+            <p
+              class="card-text subtitle-text"
+              style="font-size: 13px; color: #7b8591;"
+            >
+              <span class="text-dark">Launch Year :</span>
+              {{mission_data?.launch_year || 'NA'}}
+            </p>
+          </span>
+          <span>
+            <p
+              class="card-text subtitle-text"
+              style="font-size: 13px; color: #7b8591;"
+            >
+              <span class="text-dark">Successful Launch:</span
+              >{{mission_data?.launch_success? 'Yes': 'No'}}
+            </p>
+          </span>
+          <span>
+            <p
+              class="card-text subtitle-text"
+              style="font-size: 13px; color: #7b8591;"
+            >
+              <span class="text-dark">Successful Landing :</span
+              >{{mission_data?.landing_success? 'Yes': 'No'}}
+            </p>
+          </span>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>

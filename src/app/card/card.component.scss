@@ -1,0 +1,49 @@
+.card {
+  min-width: 175px;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px #00000029;
+  border: none;
+  &-body {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    //max-height: 100px;
+  }
+  &--round {
+    border-radius: 10px;
+  }
+  &__image {
+    background-color: #f2f2f2 !important;
+    position: relative;
+    height: 250px;
+    margin: 10px;
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__info {
+    align-items: center;
+    justify-content: space-between;
+    span {
+      flex: 0 0 70%;
+      overflow: hidden;
+      white-space: nowrap;
+      * {
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.title-text {
+  color: #494d83;
+}
+
+.subtitle-text {
+  font-size: 13px;
+  color: #7b8591;
+}
+ul {
+  list-style-type: circle;
+}
