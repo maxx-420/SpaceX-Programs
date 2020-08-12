@@ -9,11 +9,16 @@ import { Title, Meta } from "@angular/platform-browser";
 export class AppComponent implements OnInit {
   data = {
     title: "test-app",
+    description: "A simple app to browse Space-X Programs till 2019",
   };
 
-  constructor(private title: Title) {}
+  constructor(private title: Title, private meta: Meta) {}
 
   ngOnInit() {
     this.title.setTitle(this.data.title);
+    this.meta.addTags([
+      { name: "title", content: this.data.title },
+      { name: "description", content: this.data.description },
+    ]);
   }
 }
