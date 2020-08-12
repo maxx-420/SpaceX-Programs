@@ -1,9 +1,15 @@
-# TestApp
+# Space-X Programs
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
-App is SSR ready.
-ARIA - Accessibility
+App live on : https://test-assignment-13852.firebaseapp.com/
+
+- App is SSR ready.
+- ARIA Accessibility - ADDED
+- Page load - https://gtmetrix.com/reports/test-assignment-13852.firebaseapp.com/zqKz7oUQ
+
+**Please note that gzip and server-side caching is not currrently implemented in the firebase hosted app, and therefore performance markers still have room for improvement
+
 
 ## Development server
 
