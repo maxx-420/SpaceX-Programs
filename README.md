@@ -9,6 +9,8 @@ Google page Insight Scores:
 - Desktop - 95+
 
 
+Features implemented:
+
 - App is SSR ready.
 - Web Accessibility - ADDED
 - Unit test for components
