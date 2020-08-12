@@ -4,8 +4,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 App live on : https://test-assignment-13852.firebaseapp.com/
 
+Google page Insight Scores:
+- Mobile - 85-90
+- Desktop - 95+
+
+
 - App is SSR ready.
-- ARIA Accessibility - ADDED
+- Web Accessibility - ADDED
+- Unit test for components
 - Page load - https://gtmetrix.com/reports/test-assignment-13852.firebaseapp.com/zqKz7oUQ
 
 **Please note that gzip and server-side caching is not currrently implemented in the firebase hosted app, and therefore performance markers still have room for improvement
